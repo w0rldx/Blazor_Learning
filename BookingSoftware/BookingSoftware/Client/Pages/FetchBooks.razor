@@ -1,0 +1,65 @@
+@page "/fetchbooks"
+@using BookingSoftware.Shared
+@inject HttpClient client
+@inject IJSRuntime js
+@inject HttpClient http
+@inject NavigationManager uriHelper
+
+<h1>Weather forecast</h1>
+
+<p>This component demonstrates fetching data from the server.</p>
+
+@if (books == null)
+{
+    <p><em>Loading...</em></p>
+}
+else if (books.Length == 0)
+{
+    <text>No Records Found.</text>
+
+    <button class="btn btn-primary" @onclick="CreateDeveloper">
+        Add Book Eintrag
+    </button>
+}
+else
+{
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Id</th>
+            <th>Titel</th>
+            <th>Text</th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (Book forecast in books)
+        {
+            <tr>
+                <td>@forecast.BookId</td>
+                <td>@forecast.Titel</td>
+                <td>@forecast.Text</td>
+            </tr>
+        }
+        </tbody>
+    </table>
+
+    <button class="btn btn-primary" @onclick="CreateDeveloper">
+        Add Book Eintrag
+    </button>
+
+}
+
+@code {
+    Book[] books { get; set; }
+    protected override async Task OnInitializedAsync()
+    {
+        books = await client.GetFromJsonAsync<Book[]>("api/book");
+    }
+
+    async Task CreateDeveloper()
+    {
+        Book dev = new Book { Text = "Testtext", Titel = "TestTitel" };
+        await http.PostAsJsonAsync("api/book", dev);
+        await OnInitializedAsync();
+    }
+}

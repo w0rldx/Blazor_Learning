@@ -1,0 +1,28 @@
+@page "/datatesting"
+<h3>DataTesting</h3>
+
+@using Microsoft.EntityFrameworkCore
+@using Radzen
+@using AppContext = SqliteTesting.AppContext
+
+@inject AppContext dbContext
+
+<RadzenGrid AllowFiltering="true" FilterCaseSensitivity="FilterCaseSensitivity.CaseInsensitive" FilterMode="FilterMode.Advanced" AllowPaging="true" PageSize="4"
+            AllowSorting="true" Data="@filmlist" TItem="Film" ColumnWidth="200px">
+    <Columns>
+        <RadzenGridColumn TItem="Film" Property="FilmId" Title="Film ID" />
+        <RadzenGridColumn TItem="Film" Property="Name" Title="Name" />
+        <RadzenGridColumn TItem="Film" Property="Genre" Title="Genre" />
+    </Columns>
+</RadzenGrid>
+
+@code {
+    IEnumerable<Film> filmlist;
+    Dictionary<DateTime, string> events = new Dictionary<DateTime, string>();
+
+    protected override void OnInitialized()
+    {
+        filmlist = dbContext.Films;
+    }
+    
+}

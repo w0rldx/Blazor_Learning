@@ -5,34 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3e159f5f-0788-47d5-a7b8-cb2584b7c42b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../BlazorTestingWasm/.vscode/launch.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BlazorTestingWasm/.vscode/tasks.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BlazorTestingWasm/App.razor" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BlazorTestingWasm/BlazorTestingWasm.csproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BlazorTestingWasm/Pages/Counter.razor" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BlazorTestingWasm/Pages/FetchData.razor" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BlazorTestingWasm/Pages/Index.razor" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BlazorTestingWasm/Program.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BlazorTestingWasm/Properties/launchSettings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BlazorTestingWasm/Shared/MainLayout.razor" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BlazorTestingWasm/Shared/NavMenu.razor" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BlazorTestingWasm/Shared/SurveyPrompt.razor" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BlazorTestingWasm/_Imports.razor" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BlazorTestingWasm/wwwroot/css/app.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BlazorTestingWasm/wwwroot/css/bootstrap/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BlazorTestingWasm/wwwroot/css/bootstrap/bootstrap.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BlazorTestingWasm/wwwroot/css/open-iconic/FONT-LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BlazorTestingWasm/wwwroot/css/open-iconic/ICON-LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BlazorTestingWasm/wwwroot/css/open-iconic/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BlazorTestingWasm/wwwroot/css/open-iconic/font/css/open-iconic-bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BlazorTestingWasm/wwwroot/css/open-iconic/font/fonts/open-iconic.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BlazorTestingWasm/wwwroot/css/open-iconic/font/fonts/open-iconic.otf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BlazorTestingWasm/wwwroot/css/open-iconic/font/fonts/open-iconic.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BlazorTestingWasm/wwwroot/css/open-iconic/font/fonts/open-iconic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BlazorTestingWasm/wwwroot/css/open-iconic/font/fonts/open-iconic.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BlazorTestingWasm/wwwroot/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BlazorTestingWasm/wwwroot/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BlazorTestingWasm/wwwroot/sample-data/weather.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.SqliteTesting/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SqliteTesting/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SqliteTesting/SqliteTesting.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/SqliteTesting/SqliteTesting.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,9 +16,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
-  </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/SqliteTesting/obj/Debug/netstandard2.1/Razor/Pages/DataTesting.razor.g.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
@@ -55,12 +27,12 @@
       <option value="$PROJECT_DIR$/SqliteTesting/wwwroot/index.html" />
       <option value="$PROJECT_DIR$/SqliteTesting/Film.cs" />
       <option value="$PROJECT_DIR$/SqliteTesting/AppContext.cs" />
-      <option value="$PROJECT_DIR$/SqliteTesting/Program.cs" />
       <option value="$PROJECT_DIR$/SqliteTesting/Pages/DataTesting.razor" />
       <option value="$PROJECT_DIR$/SqliteTesting/Shared/panelmenu.razor" />
       <option value="$PROJECT_DIR$/SqliteTesting/Shared/Panelmenu.razor" />
       <option value="$PROJECT_DIR$/SqliteTesting/Shared/MainLayout.razor" />
       <option value="$PROJECT_DIR$/SqliteTesting/Shared/PanelMenu.razor" />
+      <option value="$PROJECT_DIR$/SqliteTesting/Program.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1immsezQvv7awzeaxAwlR0RfiXq" />
@@ -84,7 +56,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="com.mallowigi.idea.config" />
+    <property name="settings.editor.selected.configurable" value="RiderNuGetOptionsPageId" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected=".NET Launch Settings Profile.SqliteTesting">
@@ -127,14 +99,17 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1602521353419</updated>
-      <workItem from="1602521364218" duration="10624000" />
+      <workItem from="1602521364218" duration="10759000" />
+      <workItem from="1602615165706" duration="520000" />
+      <workItem from="1602615714107" duration="703000" />
+      <workItem from="1602617485404" duration="10000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="UnityProjectConfiguration" hasMinimizedUI="null" />
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -146,6 +121,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
