@@ -1,0 +1,59 @@
+﻿<div class="card m-3" style="width:18rem;">
+    <div class="card-header">
+                
+        <button class="btn btn-primary" @onclick="(() => Task.ReadOnly = false)">
+            <span class="oi oi-pencil"></span>
+        </button>
+
+        <button class="btn btn-danger" @onclick="DeleteTask">
+            <span class="oi oi-trash"></span>
+        </button>
+
+    </div>
+    <div class="card-body">
+        <EditForm Model="@Task" OnValidSubmit="HandleValidSubmit">
+            <DataAnnotationsValidator/>
+            <ValidationSummary/>
+            <div class="form-group">
+                <InputText id="titel" 
+                           @bind-Value="Task.Titel"
+                           class="form-control"
+                           readonly="@Task.ReadOnly"/>
+            </div>
+            <div class="form-group">
+                <InputTextArea id="content" 
+                               @bind-Value="Task.Inhalt" 
+                               class="form-control"
+                               readonly="@Task.ReadOnly"/>
+            </div>
+            
+            @if (!Task.ReadOnly)
+            {
+                <button class="btn btn-primary">
+                    Speichern
+                </button>
+            }
+        </EditForm>
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public TaskModel Task { get; set; }
+
+    [Parameter]
+    public EventCallback<TaskModel> OnAddNewTask { get; set; }
+
+    [Parameter]
+    public EventCallback<TaskModel> OnDeleteTask { get; set; }
+    
+    private async Task HandleValidSubmit()
+    {
+        await OnAddNewTask.InvokeAsync(Task);
+    }
+    
+    private async Task DeleteTask()
+    {
+        await OnDeleteTask.InvokeAsync(Task);
+    }
+}

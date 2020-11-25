@@ -1,0 +1,57 @@
+﻿<button class="btn btn-primary" @onclick="AddTask"> 
+    <span class="oi oi-plus"></span>
+    Neue Notiz
+</button>
+
+<div class="row">
+    @foreach (var tasks in Tasks)
+    {
+        <TaskListItem Task="tasks" OnAddNewTask="SaveTask" OnDeleteTask="DeleteTask"/>
+    }
+</div>
+
+
+@code
+{
+    private bool isEditing;
+    public IList<TaskModel> Tasks { get; set; }
+    
+    protected override void OnInitialized()
+    {
+        //Testdaten
+        Tasks = new List<TaskModel>()
+        {
+            new TaskModel {Titel = "Erster Eintrag", Inhalt = "Nichts neues", ReadOnly = true},
+            new TaskModel {Titel = "Zweiter Eintrag", Inhalt = "Nichts neues", ReadOnly = true},
+            new TaskModel {Titel = "Dritter Eintrag", Inhalt = "Nichts neues", ReadOnly = true},
+            new TaskModel {Titel = "Vierter Eintrag", Inhalt = "Nichts neues", ReadOnly = true}
+        };
+    }
+
+    private void AddTask()
+    {
+        if (!isEditing)
+        {
+            Tasks.Insert(0, new TaskModel{ReadOnly = false});
+            isEditing = true;
+        }
+    }
+
+    private void SaveTask(TaskModel taskModel)
+    {
+        taskModel.ReadOnly = true;
+        isEditing = false;
+    }
+
+    private void DeleteTask(TaskModel taskModel)
+    {
+        try
+        {
+            Tasks.Remove(taskModel);
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e.Message);
+        }
+    }
+}
